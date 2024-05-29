@@ -22,5 +22,5 @@ Aucun prérequis spécifique n'est nécessaire pour exécuter ce projet localeme
 Clonez le dépôt sur votre machine locale en utilisant la commande suivante :
 
 ```sh
-git clone https://github.com/votre-nom-utilisateur/nom-du-repo.git
+git clone https://github.com/AlexandreMoreau2002/capitalize.git
 ```
