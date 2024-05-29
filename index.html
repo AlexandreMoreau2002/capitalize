@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize</title>
+  </head>
+  <body>
+    <textarea name="texte" id="texte"></textarea>
+    <button class="convert">Convertir</button>
+    <p class="result"></p>
+    <button class="copy">copy</button>
+
+    <script>
+      document.querySelector(".convert").addEventListener("click", function () {
+        const texte = document.querySelector("#texte").value;
+        console.table(texte);
+        const result = texte.toLowerCase();
+        console.table(result);
+        document.querySelector(".result").textContent = result;
+      });
+    </script>
+
+    <style>
+      body {
+        background-color: rgb(45, 54, 61);
+      }
+      * {
+        text-align: center;
+        margin-top: 5px !important;
+      }
+
+      textarea {
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        width: 400px;
+        height: 40px;
+        margin: 0 auto;
+        border: 1px solid rgb(38, 83, 128);
+      }
+    </style>
+  </body>
+</html>
