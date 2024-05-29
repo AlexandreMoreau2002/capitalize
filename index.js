@@ -1,14 +1,18 @@
-const texte = document.querySelector("#texte").value;
-
 // convert to lower function
 document.querySelector(".lower").addEventListener("click", function () {
+  const texte = document.querySelector("#texte").value;
+  console.table(texte);
   const result = texte.toLowerCase();
+  console.table(result);
   document.querySelector(".result").textContent = result;
 });
 
 // convert to upper function
 document.querySelector(".upper").addEventListener("click", function () {
+  const texte = document.querySelector("#texte").value;
+  console.table(texte);
   const result = texte.toUpperCase();
+  console.table(result);
   document.querySelector(".result").textContent = result;
 });
 
