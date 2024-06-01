@@ -1,18 +1,16 @@
+const { text } = require("express");
+
 // convert to lower function
 document.querySelector(".lower").addEventListener("click", function () {
   const texte = document.querySelector("#texte").value;
-  console.table(texte);
-  const result = texte.toLowerCase();
-  console.table(result);
+  const result = convertText(texte, "lower");
   document.querySelector(".result").textContent = result;
 });
 
 // convert to upper function
 document.querySelector(".upper").addEventListener("click", function () {
   const texte = document.querySelector("#texte").value;
-  console.table(texte);
-  const result = texte.toUpperCase();
-  console.table(result);
+  const result = convertText(texte, "upper");
   document.querySelector(".result").textContent = result;
 });
 
@@ -28,6 +26,17 @@ document.querySelector(".copy").addEventListener("click", function () {
     }
   );
 });
+
+function convertText(text, type) {
+  let convertText = type === "upper" ? text.toUpperCase() : text.toLowerCase();
+  return capitalizeSentences(convertText);
+}
+
+function capitalizeSentences(text) {
+  return text.replace(/(?:^|\.\s+)(\w)/g, function (match, p1) {
+    return match.replace(p1, p1.toUpperCase());
+  });
+}
 
 // Notification function
 function showNotification(message) {
