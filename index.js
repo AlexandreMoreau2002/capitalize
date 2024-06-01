@@ -1,5 +1,3 @@
-const { text } = require("express");
-
 // convert to lower function
 document.querySelector(".lower").addEventListener("click", function () {
   const texte = document.querySelector("#texte").value;
