@@ -1,6 +1,6 @@
 # Nom du Projet
 
-Capitalize
+Capitalize 
 
 ## Description
 
